@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>PDF Mail Merge - Batch Fill PDF Forms from Google Sheets & Excel</title>
+    <meta name="description" content="Automate your document workflow with PDF Mail Merge. Batch-fill PDF forms, certificates, and invoices directly from Google Sheets, Excel, or CSV. Privacy-first and browser-based.">
+    <meta name="keywords" content="pdf mail merge, batch fill pdf, google sheets to pdf, excel to pdf, pdf form filler, document automation, fillable pdf converter">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pdfmailmerge.github.io/">
+    <meta property="og:title" content="PDF Mail Merge - Professional Batch Document Generator">
+    <meta property="og:description" content="Merge your spreadsheet data with PDF templates in seconds. No data storage, 100% private.">
+    <meta property="og:image" content="https://sheetstolabels.com/preview.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://pdfmailmerge.github.io/">
+    <meta name="twitter:title" content="PDF Mail Merge - Professional Batch Document Generator">
+    <meta name="twitter:description" content="Batch fill PDFs from Google Sheets or Excel. Visual mapper, no software needed.">
+    <meta name="twitter:image" content="https://sheetstolabels.com/preview.png">
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f8fafc;
+        }
+        iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: none;
+            background-color: #f8fafc;
+        }
+        .cta-wrapper {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 220px;
+            height: 220px;
+            overflow: hidden;
+            z-index: 10000;
+            pointer-events: none; /* Let clicks pass through outside the ribbon */
+        }
+        .cta-ribbon {
+            pointer-events: auto;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: #ffffff;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 700;
+            padding: 10px 40px;
+            font-size: 16px;
+            transform: rotate(45deg);
+            width: 320px;
+            position: absolute;
+            top: 45px;
+            right: -65px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .cta-ribbon:hover {
+            background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+            transform: rotate(45deg) scale(1.05);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            .cta-ribbon {
+                font-size: 14px;
+                padding: 8px 30px;
+                top: 35px;
+                right: -80px;
+            }
+        }
+        #loading {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #64748b;
+            font-size: 14px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Loading Placeholder (Hidden after iframe loads) -->
+    <div id="loading">
+        Loading PDF Mail Merge Visual Mapper...
+    </div>
+
+    <iframe
+        id="app-frame"
+        src="https://sheetstolabels.com/fill-pdf-from-excel-google-sheets?utm_source=github_io&utm_medium=referral"
+        title="PDF Mail Merge Tool"
+        allow="clipboard-write"
+        onload="document.getElementById('loading').style.display='none';"
+    ></iframe>
+
+    <div class="cta-wrapper">
+        <a href="https://sheetstolabels.com/fill-pdf-from-excel-google-sheets" class="cta-ribbon" target="_blank">
+            🚀 Open Full Version
+        </a>
+    </div>
+
+</body>
+</html>
